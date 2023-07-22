@@ -1,0 +1,33 @@
+@use "Setting";
+
+/* ローディング画面 */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: all 1s;
+    background-color: #fbf9f6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.spinner {
+    animation: sk-scaleout 1s infinite ease-in-out;
+    text-align: center;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+        transition: 2s;
+    }
+}
+
+#loading .loaded {
+    opacity: 0;
+    visibility: hidden;
+}

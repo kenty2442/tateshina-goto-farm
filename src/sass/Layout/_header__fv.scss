@@ -1,0 +1,48 @@
+@use "Setting" as *;
+
+.l-header__fv {
+    background-image: url("/assets/images/fv.png");
+    background-size: cover;
+    background-position: center;
+    // height: 100vh;
+    // height: vw(1280, 854);
+    padding-bottom: 31.71345%;
+    margin-bottom: rem(90);
+
+    @include mq(md) {
+        height: 100vh;
+        position: relative;
+    }
+}
+
+.l-header__copy-container {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    padding-top: vw(1280, 112);
+    padding-right: vw(1280, 146);
+    margin-left: auto;
+
+    @include mq(md) {
+        writing-mode: horizontal-tb;
+        position: absolute;
+        bottom: rem(100);
+    }
+}
+
+.l-header__copy-container p {
+    letter-spacing: 0.5em;
+    display: inline-block;
+    margin-left: rem(15);
+    padding: rem(15);
+    background-color: #fff;
+    font-weight: bold;
+    font-size: rem(32);
+
+    @include mq(md) {
+        font-size: rem(24);
+        padding: rem(7);
+        margin-bottom: rem(6);
+        letter-spacing: 0;
+    }
+}

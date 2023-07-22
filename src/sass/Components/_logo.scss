@@ -1,0 +1,28 @@
+@use "Setting" as *;
+
+.c-logo {
+    @include mq(lg) {
+        width: 100%;
+        order: -1;
+        margin: 0 auto;
+    }
+}
+
+.c-logo a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-logo__usi {
+    width: 96px;
+    z-index: 10;
+}
+
+.c-logo__usi--mini {
+    width: 55px;
+}
+
+.c-logo__name {
+    width: 300px;
+}

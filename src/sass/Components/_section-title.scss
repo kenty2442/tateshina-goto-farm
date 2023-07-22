@@ -1,0 +1,12 @@
+@use "Setting" as *;
+
+.c-section-title {
+    font-weight: bold;
+    font-size: rem(32);
+    text-align: center;
+    color: $title-color;
+
+    @include mq(md) {
+        font-size: rem(28);
+    }
+}

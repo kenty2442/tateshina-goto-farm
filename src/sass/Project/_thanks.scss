@@ -1,0 +1,25 @@
+@use "Setting" as *;
+
+#thanks {
+    height: 100vh;
+    background-color: $background-color;
+    padding-top: rem(80);
+}
+
+.p-thanks__container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: rem(46);
+}
+
+.p-thanks__title {
+    font-size: rem(18);
+    text-align: center;
+    font-weight: bold;
+    padding: 37px 0 44px;
+}
+
+.p-thanks__text {
+    text-align: center;
+    color: rgb(41, 149, 232);
+}

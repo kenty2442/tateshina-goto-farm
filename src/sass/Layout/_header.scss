@@ -1,0 +1,6 @@
+@use "Setting" as *;
+
+#header {
+    background-color: $background-color;
+    padding-bottom: rem(45);
+}

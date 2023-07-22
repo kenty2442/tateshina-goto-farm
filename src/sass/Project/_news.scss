@@ -1,0 +1,26 @@
+@use "Setting" as *;
+
+#news {
+    background-color: $white;
+    padding-top: rem(90);
+    padding-bottom: rem(90);
+}
+
+.p-news__item {
+    border-top: 1px solid $border-color;
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+
+    &:last-child {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.p-news__item a {
+    display: flex;
+}
+
+.p-news__time {
+    align-items: center;
+    margin-right: 12.8%;
+}

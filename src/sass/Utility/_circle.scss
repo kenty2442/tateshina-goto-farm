@@ -1,0 +1,10 @@
+@use "Setting" as *;
+
+.u-circle {
+    background-color: $background-color;
+    position: absolute;
+    height: 154px;
+    width: 154px;
+    margin-top: rem(-30);
+    border-radius: 9999px;
+}

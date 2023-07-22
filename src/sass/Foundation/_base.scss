@@ -1,0 +1,72 @@
+@use "Setting" as *;
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+
+    //スマホ
+    @include mq(md) {
+        font-size: 16px;
+    }
+
+    //~375px以下
+    @include mq(sm) {
+        font-size: calc((16 / 375) * 100vw);
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.white-inner {
+    max-width: $white-inner;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 25px;
+}
+
+.beige-inner {
+    max-width: $beige-inner;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.pc-br {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.sp-br {
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+/* fadeUp */
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

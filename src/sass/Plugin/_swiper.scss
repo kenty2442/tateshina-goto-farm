@@ -1,0 +1,33 @@
+@use "Setting" as *;
+
+.swiper {
+    padding-bottom: 6px;
+}
+
+.swiper-slide {
+    width: rem(264);
+    height: rem(331);
+    background: #fff;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.swiper__img {
+    height: 166px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper__desc {
+    padding: 16px 16px 0 16px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.swiper__price {
+    margin-top: auto;
+    padding: 0 16px 16px 16px;
+}

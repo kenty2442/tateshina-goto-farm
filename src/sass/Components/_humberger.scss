@@ -1,0 +1,54 @@
+@use "Setting" as *;
+
+.c-humberger {
+    display: none;
+    @include mq(md) {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-color: #fed966;
+        border-radius: 9999px;
+        position: absolute;
+        top: rem(20);
+        right: rem(20);
+        z-index: 30;
+        position: fixed;
+    }
+}
+
+.c-humberger span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background: #4e301b;
+    width: 18px;
+}
+
+.c-humberger span:nth-child(1) {
+    top: 15px;
+}
+.c-humberger span:nth-child(2) {
+    top: 23px;
+}
+.c-humberger span:nth-child(3) {
+    top: 31px;
+}
+
+.c-humberger.is-active span:nth-child(1) {
+    top: 16px;
+    left: 11px;
+    width: 25px;
+    transform: translateY(6px) rotate(-45deg);
+}
+.c-humberger.is-active span:nth-child(2) {
+    opacity: 0; /*真ん中の線は透過*/
+}
+.c-humberger.is-active span:nth-child(3) {
+    top: 28px;
+    left: 12px;
+    width: 25px;
+    transform: translateY(-6px) rotate(45deg);
+}

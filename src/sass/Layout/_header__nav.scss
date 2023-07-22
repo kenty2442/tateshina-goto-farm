@@ -1,0 +1,44 @@
+@use "Setting" as *;
+
+.l-header__nav {
+    max-width: 1100px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.l-header__nav--left {
+    padding-right: rem(20);
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.l-header__nav--right {
+    padding-left: rem(20);
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.l-header__nav--right ul,
+.l-header__nav--left ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-header__nav--right ul li,
+.l-header__nav--left ul li {
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+.l-header__nav--left ul li:first-child {
+    padding-left: 40px;
+}
+
+.l-header__nav--left ul li:last-child {
+    padding-right: 0;
+}

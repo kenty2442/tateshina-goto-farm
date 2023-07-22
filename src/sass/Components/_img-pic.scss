@@ -1,0 +1,35 @@
+@use "Setting" as *;
+
+.c-img-pic__right {
+    margin-top: rem(-70);
+    margin-left: auto;
+
+    @include mq(md) {
+        margin-top: rem(-50);
+    }
+}
+
+.c-img-pic__right--1 {
+    width: rem(235);
+    height: auto;
+
+    @include mq(md) {
+        width: rem(170);
+    }
+}
+.c-img-pic__right--2 {
+    width: rem(264);
+    height: auto;
+    @include mq(md) {
+        width: rem(170);
+    }
+}
+
+.c-img-pic__left {
+    position: absolute;
+    margin-top: rem(-80);
+    @include mq(md) {
+        width: rem(200);
+        margin-top: rem(-50);
+    }
+}
