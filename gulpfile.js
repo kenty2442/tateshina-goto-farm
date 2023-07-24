@@ -39,7 +39,7 @@ const compileSass = (done) => {
         )
         .pipe(autoprefixer())
         .pipe(sourcemaps.write("./"))
-        .pipe(dest("assets/css"))
+        .pipe(dest("/css"))
         .pipe(
             notify({
                 message: "コンパイル成功です!!", // 文字は好きなものに変更できる
